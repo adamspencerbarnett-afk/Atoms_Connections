@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>You're invited — Atom's Connections</title>
+<meta name="description" content="Someone invited you to Atom's Connections, a private social space for family and friends that runs in your own browser.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#070A14">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%2322D3EE' stroke-width='3'%3E%3Cellipse cx='32' cy='32' rx='28' ry='11'/%3E%3Cellipse cx='32' cy='32' rx='28' ry='11' transform='rotate(60 32 32)'/%3E%3Cellipse cx='32' cy='32' rx='28' ry='11' transform='rotate(120 32 32)'/%3E%3C/g%3E%3Ccircle cx='32' cy='32' r='5' fill='%23A78BFA'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#070A14; --glass:rgba(255,255,255,.045); --glass2:rgba(255,255,255,.08); --line:rgba(34,211,238,.22); --line2:rgba(255,255,255,.14);
+  --text:#E8EDF7; --muted:#A9B4C9; --dim:#7A86A0; --cyan:#22D3EE; --violet:#A78BFA; --ok:#34D399;
+  --grad:linear-gradient(135deg,#22D3EE 0%,#818CF8 55%,#A78BFA 100%);
+  --font:"Segoe UI Variable Text","Segoe UI",system-ui,-apple-system,"SF Pro Text",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --display:"Segoe UI Variable Display","Segoe UI",system-ui,-apple-system,"SF Pro Display",Roboto,sans-serif;
+  --gutter:clamp(16px,4vw,40px); --cut:14px;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 var(--font);-webkit-font-smoothing:antialiased;overflow-x:hidden;min-height:100vh;display:flex;flex-direction:column}
+a{color:var(--cyan)}
+svg{display:block}
+h1,h2,h3{font-family:var(--display);letter-spacing:-.01em;margin:0;line-height:1.15}
+h1{font-size:clamp(28px,4.6vw,46px);font-weight:800}
+h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+h3{font-size:18px}
+p{margin:0}
+.wrap{width:min(960px,100% - 2*var(--gutter));margin-inline:auto}
+.muted{color:var(--muted)}
+.kicker{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);margin-bottom:14px}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.bg{position:fixed;inset:0;z-index:-1;overflow:hidden;background:
+  radial-gradient(1100px 700px at 85% -10%,rgba(167,139,250,.14),transparent 60%),
+  radial-gradient(900px 700px at -10% 110%,rgba(34,211,238,.10),transparent 60%),var(--bg)}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.3;animation:drift 32s ease-in-out infinite alternate}
+.o1{width:520px;height:520px;background:#22D3EE;top:-180px;left:5%}
+.o2{width:460px;height:460px;background:#A78BFA;bottom:-160px;right:4%;animation-duration:40s}
+@keyframes drift{to{transform:translate(70px,50px) scale(1.12)}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+.card{position:relative;background:var(--glass);border:1px solid var(--line);backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%);
+  box-shadow:0 24px 60px -30px rgba(0,0,0,.8),inset 0 0 42px -20px rgba(34,211,238,.35);
+  clip-path:polygon(var(--cut) 0,100% 0,100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,0 100%,0 var(--cut))}
+.card::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.55;
+  background:linear-gradient(var(--cyan),var(--cyan)) var(--cut) 0/44px 2px no-repeat,linear-gradient(var(--cyan),var(--cyan)) 0 var(--cut)/2px 44px no-repeat,
+  linear-gradient(var(--violet),var(--violet)) calc(100% - var(--cut)) 100%/44px 2px no-repeat,linear-gradient(var(--violet),var(--violet)) 100% calc(100% - var(--cut))/2px 44px no-repeat}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;border:1px solid var(--line2);background:var(--glass2);color:var(--text);cursor:pointer;
+  font:700 13.5px/1 var(--font);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;--c:9px;
+  clip-path:polygon(var(--c) 0,100% 0,100% calc(100% - var(--c)),calc(100% - var(--c)) 100%,0 100%,0 var(--c));transition:transform .15s,background .2s,filter .2s}
+.btn:hover{background:rgba(255,255,255,.13)}
+.btn:active{transform:scale(.98)}
+.btn.primary{background:var(--grad);color:#05101A;border:none;box-shadow:0 12px 30px -10px rgba(34,211,238,.7);position:relative;overflow:hidden}
+.btn.primary::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.5) 50%,transparent 70%);transform:translateX(-120%);transition:transform .6s}
+.btn.primary:hover::after{transform:translateX(120%)}
+.btn.big{min-height:58px;padding:0 32px;font-size:15px}
+.btn svg{width:18px;height:18px}
+.btn[hidden]{display:none}
+
+.top{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(7,10,20,.72);border-bottom:1px solid rgba(34,211,238,.14)}
+.top .wrap{display:flex;align-items:center;gap:14px;min-height:66px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
+.hex{position:relative;width:44px;height:50px;display:grid;place-items:center;background:var(--grad);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);filter:drop-shadow(0 0 10px rgba(34,211,238,.35))}
+.hex::before{content:"";position:absolute;inset:1.5px;background:#0a0f1f;clip-path:inherit}
+.hex svg{position:relative;width:30px;height:30px}
+.brand .wm{line-height:1.1;font-family:var(--display);text-transform:uppercase;letter-spacing:.1em}
+.brand .wm b{display:block;font-size:11px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.brand .wm span{font-size:15px;font-weight:700}
+.top a.home{margin-left:auto;color:var(--muted);text-decoration:none;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.top a.home:hover{color:var(--text)}
+
+main{flex:1;padding:clamp(24px,4vw,56px) 0}
+.hero{padding:clamp(26px,4vw,44px);text-align:center;margin-bottom:22px}
+.hero .lead{font-size:clamp(16px,1.5vw,19px);color:var(--muted);margin:18px auto 26px;max-width:600px}
+.status{margin-top:16px;font-size:14.5px;color:var(--muted);min-height:1.6em}
+.status.ok{color:var(--ok)}
+.status .spin{display:inline-block;width:12px;height:12px;border:2px solid rgba(34,211,238,.35);border-top-color:var(--cyan);border-radius:50%;vertical-align:-1px;margin-right:8px;animation:spin .9s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hint{margin-top:10px;font-size:14px;color:var(--dim)}
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.step{padding:22px 24px;display:flex;flex-direction:column;gap:12px}
+.step p{color:var(--muted);font-size:14.5px}
+.step .btn{align-self:flex-start;min-height:44px;font-size:12.5px;padding:0 18px}
+.step ol{margin:0;padding-left:22px;color:var(--muted);font-size:14.5px;display:flex;flex-direction:column;gap:6px}
+.step ol b{color:var(--text)}
+.codebox{font-family:ui-monospace,Consolas,"Cascadia Mono",monospace;font-size:12.5px;word-break:break-all;background:rgba(4,7,16,.6);border:1px solid rgba(34,211,238,.35);border-radius:12px;padding:12px;color:#A5F3FC;user-select:all}
+.fine{margin-top:22px;font-size:13.5px;color:var(--dim);text-align:center}
+.fine svg{width:15px;height:15px;color:var(--ok);display:inline;vertical-align:-2px;margin-right:4px}
+.warn{padding:14px 18px;margin-bottom:18px;font-size:14.5px;color:var(--text);background:rgba(167,139,250,.12);border:1px solid rgba(167,139,250,.4)}
+[hidden]{display:none!important}
+@media (max-width:720px){.steps{grid-template-columns:1fr}.top .wm{display:none}}
+footer{padding:22px 0 30px;border-top:1px solid rgba(34,211,238,.14);color:var(--dim);font-size:13.5px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--text)}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><div class="orb o1"></div><div class="orb o2"></div></div>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="https://atomsconnections.com/" aria-label="Atom's Connections home">
+      <span class="hex"><svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="#22D3EE" stroke-width="3"><ellipse cx="32" cy="32" rx="28" ry="11"/><ellipse cx="32" cy="32" rx="28" ry="11" transform="rotate(60 32 32)"/><ellipse cx="32" cy="32" rx="28" ry="11" transform="rotate(120 32 32)"/></g><circle cx="32" cy="32" r="5" fill="#A78BFA"/></svg></span>
+      <span class="wm"><b>Ultra Encode</b><span>Atom's Connections</span></span>
+    </a>
+    <a class="home" href="https://atomsconnections.com/">What is it?</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="card warn" id="notwin" hidden>Atom's Connections runs on Windows PCs and laptops for now. Open this link on your computer to connect.</div>
+    <div class="card warn" id="broken" hidden>This invite link is incomplete. Ask the person who sent it to copy the whole link and send it again.</div>
+
+    <section class="card hero" id="hero">
+      <span class="kicker">Private invite</span>
+      <h1><em id="who">Someone</em> invited you to Atom's Connections</h1>
+      <p class="lead">A private space for family and friends: photos, videos and chat, encrypted between your computers. No accounts, no ads, no company server in the middle.</p>
+      <a class="btn primary big" id="open" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7L12 19"/></svg>
+        Open Atom's Connections
+      </a>
+      <p class="status" id="status"><span class="spin"></span>Checking whether Atom's Connections is open on this computer…</p>
+      <p class="hint" id="hint" hidden></p>
+    </section>
+
+    <div class="steps">
+      <div class="card step">
+        <h3>Don't have it yet?</h3>
+        <ol>
+          <li><b>Download</b> it below. It's free and installs just for you, no administrator password.</li>
+          <li><b>Run the installer</b> and start Atom's Connections.</li>
+          <li><b>Type your name.</b> <span class="who2">Your friend</span>'s invite travels with the download, so you're asked to connect right away.</li>
+        </ol>
+        <a class="btn" id="dl" href="https://atomsconnections.com/Atoms-Connections-Setup.exe" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Download for Windows</a>
+      </div>
+      <div class="card step">
+        <h3>Or paste the code</h3>
+        <p>In Atom's Connections go to <b>Family/Friends → Have an invite?</b>, paste this code and tap <b>Connect</b>.</p>
+        <div class="codebox" id="code" tabindex="0" aria-label="Invite code"></div>
+        <button class="btn" type="button" id="copy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 0 1 1-1h10"/></svg>Copy code</button>
+      </div>
+    </div>
+
+    <p class="fine"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>This invite is just for you: it works once and expires 7 days after it was made. The code stays in your browser; the part of the link after # is never sent to our website.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 <b>Ultra Encode, LLC</b>. All rights reserved.</div>
+    <div><a href="https://atomsconnections.com/">atomsconnections.com</a></div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var APP = 'http://127.0.0.1:47800/';
+  var $ = function (id) { return document.getElementById(id); };
+  var code = (location.hash.match(/ATOM-[A-Za-z0-9_-]{43,}/) || [])[0];
+  if (!/Windows/.test(navigator.userAgent)) $('notwin').hidden = false;
+  if (!code) { $('broken').hidden = false; $('hero').hidden = true; $('copy').hidden = true; $('code').textContent = '—'; return; }
+
+  // The code packs the inviter's address (16 bytes), a one-time secret (16 bytes) and their name.
+  try {
+    var b64 = code.slice(5).replace(/-/g, '+').replace(/_/g, '/'), bin = atob(b64 + '==='.slice((b64.length + 3) % 4));
+    var bytes = new Uint8Array(bin.length); for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    var name = new TextDecoder().decode(bytes.subarray(32)).replace(/[\u0000-\u001f\u007f]/g, '').trim().slice(0, 40);
+    if (name) { $('who').textContent = name; document.title = name + " invited you — Atom's Connections"; }
+  } catch (e) {}
+  $('code').textContent = code;
+  $('dl').setAttribute('download', 'Atoms-Connections-Setup ' + code + '.exe');   // the installer reads the invite from its own file name
+  document.querySelectorAll('.who2').forEach(function (e) { e.textContent = $('who').textContent; });
+
+  var open = $('open'), status = $('status'), hint = $('hint');
+  var appUrl = APP + '#invite=' + code, schemeUrl = 'atoms://invite/' + code;
+  var running = false;
+  open.href = schemeUrl;   // the installed program registers atoms:// and opens the app with the invite, even when it isn't running yet
+
+  function say(text, ok) { status.className = 'status' + (ok ? ' ok' : ''); status.textContent = text; }
+
+  // Is the program answering on this computer? (Only a yes/no; the browser hides the reply from this page.)
+  function check() {
+    return new Promise(function (res) {
+      var ctl = typeof AbortController === 'function' ? new AbortController() : null, done = false;
+      var finish = function (v) { if (!done) { done = true; res(v); } };
+      setTimeout(function () { if (ctl) ctl.abort(); finish(false); }, 1500);
+      fetch(APP + 'ping', { mode: 'no-cors', cache: 'no-store', signal: ctl && ctl.signal }).then(function () { finish(true); }, function () { finish(false); });
+    });
+  }
+  function found() {
+    running = true; open.href = appUrl;
+    say("Atom's Connections is open on this computer. Tap the button to connect with " + $('who').textContent + '.', true);
+    hint.hidden = true;
+  }
+  check().then(function (yes) {
+    if (yes) { found(); say("Atom's Connections is open on this computer. Opening it…", true); location.replace(appUrl); return; }
+    say("Have Atom's Connections? Tap the button and it opens with this invite. New here? Download it below.");
+    var timer = setInterval(function () { check().then(function (y) { if (y) { clearInterval(timer); found(); } }); }, 3000);
+  });
+  open.addEventListener('click', function () {
+    if (running) return;
+    setTimeout(function () { if (!running) { hint.hidden = false; hint.textContent = "Nothing happened? Start Atom's Connections from your desktop or Start menu, then tap the button again. If you don't have it yet, download it below."; } }, 2500);
+  });
+  $('copy').addEventListener('click', function () {
+    var ok = function () { $('copy').lastChild.textContent = 'Copied'; setTimeout(function () { $('copy').lastChild.textContent = 'Copy code'; }, 2000); };
+    if (navigator.clipboard) navigator.clipboard.writeText(code).then(ok, function () { $('code').focus(); });
+    else { $('code').focus(); }
+  });
+})();
+</script>
+</body>
+</html>
