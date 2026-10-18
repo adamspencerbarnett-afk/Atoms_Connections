@@ -223,6 +223,12 @@ section{padding:clamp(26px,3.5vw,48px) 0}
 .gm-copy h3{font-size:19px;margin:0 0 8px}
 .gm-copy p,.gm-copy ul{color:var(--muted);font-size:15.5px;margin:0 0 20px;line-height:1.55}
 .gm-copy ul{padding-left:18px;display:flex;flex-direction:column;gap:6px}
+.share-plug{padding:clamp(20px,3vw,30px);margin-top:clamp(18px,2.5vw,28px)}
+.share-plug h3{font-size:19px;margin:0 0 8px}
+.share-plug p,.share-plug ul{color:var(--muted);font-size:15.5px;line-height:1.55;margin:0 0 12px}
+.share-plug ul{padding-left:18px;display:flex;flex-direction:column;gap:6px;margin:0}
+.share-plug a{color:var(--cyan)}
+.share-plug code{font-size:13.5px;color:var(--text)}
 .gm-copy .gm-note{font-size:13.5px;margin-bottom:0}
 @media (max-width:900px){.gm{grid-template-columns:1fr}}
 
@@ -432,6 +438,15 @@ footer .links{display:flex;flex-wrap:wrap;gap:18px}
           </ul>
           <p class="gm-note">PAC Runner is also the worked example for anyone who wants to build a game. The app includes a short developer guide and the game's full source.</p>
         </div>
+      </div>
+      <div class="card share-plug">
+        <h3>Share your game or tool with everyone</h3>
+        <p>Made a plugin your family loves? Email the <b>.atomplugin</b> file to <a href="mailto:atomsconnections@gmail.com?subject=Plugin%20for%20Atom%27s%20Connections">atomsconnections@gmail.com</a> with a line about what it does and which category it fits (Games, Learning, Tools, or a new one). Once it has been checked, it appears in everyone's app under <b>Plugins &rarr; Browse plugins</b>, ready to add with one click.</p>
+        <ul>
+          <li><b>Size:</b> keep the file under 50 MB. 100 MB is the most the site can hold for a single file.</li>
+          <li><b>Everything inside:</b> plugins run in a sealed box with no internet, so images, sounds and code must all be in the file.</li>
+          <li><b>Updates:</b> send the new file with the same <code>id</code> and a higher <code>version</code> in manifest.json. Everyone who has it is offered the update, and their saved progress comes along.</li>
+        </ul>
       </div>
     </div>
   </section>
