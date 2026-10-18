@@ -1,0 +1,59 @@
+ATOM'S CONNECTIONS
+User Agreement and License
+
+Copyright (c) 2026 Adam S. Barnett. All rights reserved.
+
+Thank you for using Atom's Connections. It was written to give families and
+friends a private place of their own, and it is offered in that spirit.
+Please read these few terms; they are short and plain on purpose.
+
+1. YOU MAY USE IT, FREE OF CHARGE
+   You may install and use Atom's Connections for personal, non-commercial
+   purposes, on as many of your own devices as you like, at no cost.
+
+2. YOU MAY SHARE IT WITH FAMILY AND FRIENDS
+   You may give complete, unmodified copies of Atom's Connections (the
+   original zip file or its unchanged contents) to family members and
+   friends, free of charge. Please pass this agreement along with it.
+
+3. PLEASE DON'T CHANGE IT
+   The software must be used and shared exactly as it was released. You may
+   not modify, alter, adapt, translate, reverse engineer, decompile, or
+   create derivative works from any part of it, including its code, design,
+   artwork, and text. Keeping it unchanged is also what keeps it safe: it
+   is what lets everyone trust that the copy they received is the real one.
+
+4. PLEASE DON'T SELL IT
+   You may not sell, rent, lease, sublicense, or otherwise charge for
+   Atom's Connections or access to it, bundle it with a paid product or
+   service, or use it for any commercial purpose, without a separate
+   written license from Adam S. Barnett. If you have a commercial idea in
+   mind, please get in touch; a friendly conversation is all it takes to
+   start.
+
+5. OWNERSHIP
+   Atom's Connections, its name, and all of its contents are the work and
+   property of Adam S. Barnett and remain so. Nothing in this agreement
+   gives you ownership of any part of it; it gives you permission to use
+   and share it as described above.
+
+6. YOUR DATA IS YOURS
+   The software stores your posts, photos, messages, and keys only on your
+   own device, encrypted, and sends them only to the people you have
+   connected with. The author does not collect, receive, or have access to
+   any of it.
+
+7. NO WARRANTY
+   Atom's Connections is provided "as is", without warranty of any kind,
+   express or implied. It is a personal project shared in good faith; you
+   use it at your own risk, and the author is not liable for any loss or
+   damage arising from its use, including loss of data. Please keep backups.
+
+8. ENDING THE AGREEMENT
+   This permission ends automatically if you break any of these terms.
+   Nothing else is required of you; simply stop using the software.
+
+Questions, permission requests, and commercial inquiries:
+https://github.com/adamspencerbarnett-afk/Atoms_Connections
+
+Written by Adam S. Barnett. All rights reserved.
