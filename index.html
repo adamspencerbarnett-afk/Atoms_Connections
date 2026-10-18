@@ -82,7 +82,12 @@ p{margin:0}
 .nav a{color:var(--muted);text-decoration:none;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:10px 14px;transition:color .2s}
 .nav a:hover{color:var(--text)}
 .top .btn{min-height:42px;padding:0 18px;font-size:12px}
-@media (max-width:760px){.nav{display:none}.top .btn{margin-left:auto}}
+.sfx-btn{display:grid;place-items:center;width:42px;height:42px;margin-right:6px;background:transparent;border:1px solid var(--line2);color:var(--muted);cursor:pointer;clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px)}
+.sfx-btn:hover{color:var(--text);background:rgba(255,255,255,.06)}
+.sfx-btn svg{width:18px;height:18px}.sfx-btn .x{display:none}.sfx-btn[aria-pressed=false] .w{display:none}.sfx-btn[aria-pressed=false] .x{display:inline}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.dl-note{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:60;max-width:min(520px,calc(100% - 32px));padding:14px 18px;background:rgba(10,14,28,.97);border:1px solid rgba(34,211,238,.4);color:var(--text);font-size:14.5px;line-height:1.5;box-shadow:0 20px 50px -20px rgba(0,0,0,.8),0 0 30px -12px rgba(34,211,238,.6);clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px)}
+@media (max-width:760px){.nav{display:none}.sfx-btn{margin-left:auto}}
 
 /* ---------- hero ---------- */
 .hero{padding:clamp(20px,3vw,40px) 0 clamp(18px,2.5vw,28px)}
@@ -279,7 +284,8 @@ footer .links{display:flex;flex-wrap:wrap;gap:18px}
     <nav class="nav" aria-label="Page">
       <a href="#features">Features</a><a href="#safe">Safety</a><a href="#how">How it works</a><a href="#games">Games</a><a href="#faq">FAQ</a>
     </nav>
-    <a class="btn primary" href="#download">Download</a>
+    <button class="sfx-btn" id="sfx" type="button" aria-pressed="true" title="Sounds on (click to turn off)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4z"/><path class="w" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/><path class="x" d="m16 9 6 6M22 9l-6 6"/></svg><span class="sr">Sounds</span></button>
+    <a class="btn primary" href="https://atomsconnections.com/Atoms-Connections.zip" download>Download</a>
   </div>
 </header>
 
@@ -291,7 +297,7 @@ footer .links{display:flex;flex-wrap:wrap;gap:18px}
         <h1>Your family's own <em>social space</em>, with nobody in the middle.</h1>
         <p class="lead">Atom's Connections runs in your own web browser. Share photos, videos and links with the people you choose, chat with them directly, and know that only your family and friends can ever see it.</p>
         <div class="cta">
-          <a class="btn primary" href="https://atomsconnections.com/Atoms-Connections.zip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg>Download for Windows</a>
+          <a class="btn primary" href="https://atomsconnections.com/Atoms-Connections.zip" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg>Download for Windows</a>
           <a class="btn" href="#how">How it works</a>
         </div>
         <div class="fine">
@@ -447,7 +453,7 @@ footer .links{display:flex;flex-wrap:wrap;gap:18px}
         <h2>Give your family a space of its own.</h2>
         <p>Download Atom's Connections, start it, and send your first invite. The whole thing takes about two minutes.</p>
         <div class="cta" style="justify-content:center">
-          <a class="btn primary" href="https://atomsconnections.com/Atoms-Connections.zip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg>Download for Windows</a>
+          <a class="btn primary" href="https://atomsconnections.com/Atoms-Connections.zip" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg>Download for Windows</a>
         </div>
       </div>
     </div>
@@ -475,7 +481,7 @@ footer .links{display:flex;flex-wrap:wrap;gap:18px}
   <div class="wrap">
     <div>© 2026 <b>Ultra Encode, LLC</b>. All rights reserved. Founder: <b>Adam S. Barnett</b>.</div>
     <div class="links">
-      <a href="https://atomsconnections.com/Atoms-Connections.zip">Download</a>
+      <a href="https://atomsconnections.com/Atoms-Connections.zip" download>Download</a>
       <a href="#license" onclick="document.getElementById('license').showModal();return false">User agreement</a>
       <a href="mailto:atomsconnections@gmail.com">atomsconnections@gmail.com</a>
     </div>
@@ -484,6 +490,63 @@ footer .links{display:flex;flex-wrap:wrap;gap:18px}
 <script>
   // the license dialog closes on Esc (built in) and on a click outside it
   document.getElementById('license').addEventListener('click', e => { if (e.target === e.currentTarget) e.currentTarget.close(); });
+
+  const store = { get(k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
+
+  // Downloads: up to 3 a day from this browser, so a double click doesn't fill someone's Downloads folder.
+  const DL_MAX = 3, today = () => new Date().toDateString();
+  let noteTimer = 0;
+  function note(text) {
+    let n = document.querySelector('.dl-note');
+    if (!n) { n = document.createElement('div'); n.className = 'dl-note'; n.setAttribute('role', 'status'); document.body.appendChild(n); }
+    n.textContent = text; clearTimeout(noteTimer); noteTimer = setTimeout(() => n.remove(), 7000);
+  }
+  document.addEventListener('click', e => {
+    const a = e.target.closest('a[href$="Atoms-Connections.zip"]'); if (!a) return;
+    const c = store.get('atoms-dl'), n = c && c.day === today() ? c.n : 0;
+    if (n >= DL_MAX) { e.preventDefault(); Sfx.play('deny'); note("You've already downloaded Atom's Connections " + DL_MAX + " times today. It's in your Downloads folder as Atoms-Connections.zip. You can download it again tomorrow."); return; }
+    store.set('atoms-dl', { day: today(), n: n + 1 });
+    note(n === 0 ? 'Downloading Atoms-Connections.zip. Open it from your Downloads folder, then follow README.txt inside.' : 'Downloading again. Your earlier copy is in your Downloads folder too.');
+  });
+
+  // Little interface sounds, the same as in the app. Browsers allow sound only after the first click or key press.
+  const Sfx = {
+    ctx: null, ready: false, last: 0, on: store.get('atoms-sfx') !== false,
+    tone(from, to, dur, type, vol, delay = 0) {
+      const c = this.ctx || (this.ctx = new (window.AudioContext || window.webkitAudioContext)());
+      if (c.state === 'suspended') c.resume();
+      const t = c.currentTime + delay, o = c.createOscillator(), g = c.createGain();
+      o.type = type; o.frequency.setValueAtTime(from, t); o.frequency.exponentialRampToValueAtTime(to, t + dur);
+      g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(vol, t + 0.008); g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+      o.connect(g).connect(c.destination); o.start(t); o.stop(t + dur + 0.02);
+    },
+    play(kind) {
+      if (!this.ready || !this.on || !(window.AudioContext || window.webkitAudioContext)) return;
+      const now = performance.now();
+      if (kind === 'hover' && now - this.last < 60) return;
+      this.last = now;
+      try {
+        if (kind === 'hover') this.tone(2400, 2900, 0.035, 'sine', 0.015);
+        else if (kind === 'click') this.tone(1300, 650, 0.07, 'triangle', 0.045);
+        else if (kind === 'open') { this.tone(620, 1400, 0.13, 'sine', 0.045); }
+        else if (kind === 'deny') { this.tone(320, 220, 0.12, 'triangle', 0.05); this.tone(260, 180, 0.14, 'triangle', 0.045, 0.1); }
+      } catch (e) {}
+    }
+  };
+  const targets = 'a, button, summary';
+  let hovered = null;
+  document.addEventListener('pointerdown', e => { Sfx.ready = true; const t = e.target.closest(targets); if (t) Sfx.play(t.matches('summary') ? 'open' : 'click'); }, true);
+  document.addEventListener('keydown', () => { Sfx.ready = true; }, true);
+  document.addEventListener('pointerover', e => {
+    const t = e.target.closest(targets);
+    if (t === hovered) return;
+    hovered = t;
+    if (t && e.pointerType === 'mouse') Sfx.play('hover');
+  });
+  const sfxBtn = document.getElementById('sfx');
+  const showSfx = () => { sfxBtn.setAttribute('aria-pressed', String(Sfx.on)); sfxBtn.title = Sfx.on ? 'Sounds on (click to turn off)' : 'Sounds off (click to turn on)'; };
+  sfxBtn.addEventListener('click', () => { Sfx.on = !Sfx.on; store.set('atoms-sfx', Sfx.on); showSfx(); if (Sfx.on) Sfx.play('click'); });
+  showSfx();
 </script>
 </body>
 </html>
