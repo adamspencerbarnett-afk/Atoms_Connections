@@ -268,6 +268,10 @@ footer{padding:26px 0 34px;border-top:1px solid rgba(34,211,238,.14);color:var(-
 footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--text)}
+footer .stats{flex-basis:100%;display:flex;gap:22px;font-size:12.5px;letter-spacing:.04em;color:var(--dim)}
+footer .stats span{display:inline-flex;align-items:center;gap:7px}
+footer .stats svg{width:15px;height:15px;color:var(--cyan,#22D3EE)}
+footer .stats b{color:var(--muted);font-variant-numeric:tabular-nums}
 footer .links{display:flex;flex-wrap:wrap;gap:18px}
 </style>
 </head>
@@ -485,6 +489,7 @@ footer .links{display:flex;flex-wrap:wrap;gap:18px}
       <a href="#license" onclick="document.getElementById('license').showModal();return false">User agreement</a>
       <a href="mailto:atomsconnections@gmail.com">atomsconnections@gmail.com</a>
     </div>
+    <div class="stats" id="stats" hidden><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg><b id="st-downloads">0</b> downloads</span></div>
   </div>
 </footer>
 <script>
@@ -506,8 +511,18 @@ footer .links{display:flex;flex-wrap:wrap;gap:18px}
     const c = store.get('atoms-dl'), n = c && c.day === today() ? c.n : 0;
     if (n >= DL_MAX) { e.preventDefault(); Sfx.play('deny'); note("You've already downloaded Atom's Connections " + DL_MAX + " times today. It's in your Downloads folder as Atoms-Connections.zip. You can download it again tomorrow."); return; }
     store.set('atoms-dl', { day: today(), n: n + 1 });
+    count('hit', 'downloads');
     note(n === 0 ? 'Downloading Atoms-Connections.zip. Open it from your Downloads folder, then follow README.txt inside.' : 'Downloading again. Your earlier copy is in your Downloads folder too.');
   });
+
+  // Download count (an Abacus public counter): each download the site allows adds one.
+  const COUNTER = 'https://abacus.jasoncameron.dev/', NS = 'atomsconnections-com', fmt = n => Number(n).toLocaleString();
+  function count(op, key) {
+    return fetch(COUNTER + op + '/' + NS + '/' + key, { keepalive: true, cache: 'no-store' })
+      .then(r => r.ok ? r.json() : null).then(j => { if (j && typeof j.value === 'number') { document.getElementById('st-' + key).textContent = fmt(j.value); document.getElementById('stats').hidden = false; } })
+      .catch(() => {});   // if the counter service is down, the footer simply shows nothing
+  }
+  count('get', 'downloads');
 
   // Little interface sounds, the same as in the app. Browsers allow sound only after the first click or key press.
   const Sfx = {
