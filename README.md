@@ -15,13 +15,13 @@ Share photos, videos, links, and thoughts in a feed. Chat one-to-one or in small
 
 ## Download and use
 
-1. **Download** [`Atoms-Connections.zip`](https://atomsconnections.com/Atoms-Connections.zip).
-2. **Unzip it** anywhere you like, for example in your Documents folder. Keep the files together.
-3. **Double-click `Start Atom's Connections`.** The app opens in your normal web browser, and a shortcut appears on your desktop for next time.
+1. **Download** [`Atoms-Connections-Setup.exe`](https://atomsconnections.com/Atoms-Connections-Setup.exe) and run it. It installs just for you (no administrator password), adds Atom's Connections to the Start menu, and can put a shortcut on your desktop.
 
-   The first time, Windows may show a blue *"Windows protected your PC"* box. That appears for any program downloaded from the internet. Click **More info**, then **Run anyway**. It only happens once.
+   Atom's Connections is new, so Windows is careful with it at first: your browser may ask whether to keep the download (choose **Keep**), and Windows may show a blue *"Windows protected your PC"* box. Click **More info**, then **Run anyway**.
 
-4. **Type your name**, pick a photo if you like, and tap **Create my space**.
+   Prefer no installer? Download [`Atoms-Connections.zip`](https://atomsconnections.com/Atoms-Connections.zip), unzip it anywhere and double-click `AtomsConnections`.
+
+2. **Type your name**, pick a photo if you like, and tap **Create my space**.
 
 ### Connecting with someone
 
@@ -30,7 +30,7 @@ Share photos, videos, links, and thoughts in a feed. Chat one-to-one or in small
 
 ### Good to know
 
-- Always open the app with **Start Atom's Connections**, not by opening `index.html` or a browser bookmark.
+- Always open the app from its desktop shortcut or the Start menu, not from a browser bookmark.
 - Posts and messages travel while you both have the app open. If someone is away, things wait and arrive the next time you're both online.
 - **Settings → Back up now** saves your photos, posts, and chats into your Pictures and Documents folders, plus a password-locked restore file for moving to a new computer. Do this now and then.
 - The **Online / Offline** switch at the top disconnects you completely.

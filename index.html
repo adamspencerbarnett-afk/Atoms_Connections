@@ -86,6 +86,7 @@ p{margin:0}
 .sfx-btn:hover{color:var(--text);background:rgba(255,255,255,.06)}
 .sfx-btn svg{width:18px;height:18px}.sfx-btn .x{display:none}.sfx-btn[aria-pressed=false] .w{display:none}.sfx-btn[aria-pressed=false] .x{display:inline}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.alt-dl{margin-top:16px;font-size:13.5px;color:var(--dim)}.alt-dl a{color:var(--muted)}.alt-dl a:hover{color:var(--text)}
 .dl-note{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:60;max-width:min(520px,calc(100% - 32px));padding:14px 18px;background:rgba(10,14,28,.97);border:1px solid rgba(34,211,238,.4);color:var(--text);font-size:14.5px;line-height:1.5;box-shadow:0 20px 50px -20px rgba(0,0,0,.8),0 0 30px -12px rgba(34,211,238,.6);clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px)}
 @media (max-width:760px){.nav{display:none}.sfx-btn{margin-left:auto}}
 
@@ -289,7 +290,7 @@ footer .links{display:flex;flex-wrap:wrap;gap:18px}
       <a href="#features">Features</a><a href="#safe">Safety</a><a href="#how">How it works</a><a href="#games">Games</a><a href="#faq">FAQ</a>
     </nav>
     <button class="sfx-btn" id="sfx" type="button" aria-pressed="true" title="Sounds on (click to turn off)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4z"/><path class="w" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/><path class="x" d="m16 9 6 6M22 9l-6 6"/></svg><span class="sr">Sounds</span></button>
-    <a class="btn primary" href="https://atomsconnections.com/Atoms-Connections.zip" download>Download</a>
+    <a class="btn primary" href="https://atomsconnections.com/Atoms-Connections-Setup.exe" download>Download</a>
   </div>
 </header>
 
@@ -301,7 +302,7 @@ footer .links{display:flex;flex-wrap:wrap;gap:18px}
         <h1>Your family's own <em>social space</em>, with nobody in the middle.</h1>
         <p class="lead">Atom's Connections runs in your own web browser. Share photos, videos and links with the people you choose, chat with them directly, and know that only your family and friends can ever see it.</p>
         <div class="cta">
-          <a class="btn primary" href="https://atomsconnections.com/Atoms-Connections.zip" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg>Download for Windows</a>
+          <a class="btn primary" href="https://atomsconnections.com/Atoms-Connections-Setup.exe" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg>Download for Windows</a>
           <a class="btn" href="#how">How it works</a>
         </div>
         <div class="fine">
@@ -404,12 +405,12 @@ footer .links{display:flex;flex-wrap:wrap;gap:18px}
         <h2>Up and running in a couple of minutes.</h2>
       </div>
       <div class="steps">
-        <div class="card step"><h3>Download and start</h3><p>Download the zip, unzip it anywhere, and double-click <b>Start Atom's Connections</b>. Type your name and you're in. No account, no password.</p></div>
+        <div class="card step"><h3>Download and start</h3><p>Download the installer and run it. It installs just for you, no administrator password, and can add a desktop shortcut. Type your name and you're in. No account, no password.</p></div>
         <div class="card step"><h3>Invite your people</h3><p>Tap <b>Invite</b> to get a private code for one person. Text or email it to them. When they enter it, you're connected automatically.</p></div>
         <div class="card step"><h3>Share and chat</h3><p>Post photos, videos and links to your feed, chat directly, and enjoy a social space that belongs to your family alone.</p></div>
         <div class="card step"><h3>Keep a backup</h3><p>Your profile and connections live only on your computer. If its browser data is cleared, Windows is reinstalled, or you move to a new PC without a backup, the connection is lost for good and you'll start over with new invites. <b>Settings → Back up now</b> protects you.</p></div>
       </div>
-      <div class="card note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg><span><b>Beta:</b> Atom's Connections is still in testing and works on Windows laptops and PCs (Chrome or Edge), not on phones or tablets yet. The first time you start it, Windows may show a "protected your PC" notice, as it does for any new program from the internet: click <b>More info</b>, then <b>Run anyway</b>. The download includes a short guide and the user agreement.</span></div>
+      <div class="card note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg><span><b>Beta:</b> Atom's Connections is still in testing and works on Windows laptops and PCs (Chrome or Edge), not on phones or tablets yet. Atom's Connections is new, so Windows is careful with it at first: your browser may ask whether to keep the download (choose <b>Keep</b>), and Windows may show a "protected your PC" notice when you run the installer: click <b>More info</b>, then <b>Run anyway</b>. The installer shows the user agreement and adds a short guide.</span></div>
     </div>
   </section>
 
@@ -457,8 +458,9 @@ footer .links{display:flex;flex-wrap:wrap;gap:18px}
         <h2>Give your family a space of its own.</h2>
         <p>Download Atom's Connections, start it, and send your first invite. The whole thing takes about two minutes.</p>
         <div class="cta" style="justify-content:center">
-          <a class="btn primary" href="https://atomsconnections.com/Atoms-Connections.zip" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg>Download for Windows</a>
+          <a class="btn primary" href="https://atomsconnections.com/Atoms-Connections-Setup.exe" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg>Download for Windows</a>
         </div>
+        <p class="alt-dl">Prefer no installer? <a href="https://atomsconnections.com/Atoms-Connections.zip" download>Download the zip</a>, unzip it anywhere and double-click <b>AtomsConnections</b>.</p>
       </div>
     </div>
   </section>
@@ -485,7 +487,7 @@ footer .links{display:flex;flex-wrap:wrap;gap:18px}
   <div class="wrap">
     <div>© 2026 <b>Ultra Encode, LLC</b>. All rights reserved. Founder: <b>Adam S. Barnett</b>.</div>
     <div class="links">
-      <a href="https://atomsconnections.com/Atoms-Connections.zip" download>Download</a>
+      <a href="https://atomsconnections.com/Atoms-Connections-Setup.exe" download>Download</a>
       <a href="#license" onclick="document.getElementById('license').showModal();return false">User agreement</a>
       <a href="mailto:atomsconnections@gmail.com">atomsconnections@gmail.com</a>
     </div>
@@ -507,12 +509,13 @@ footer .links{display:flex;flex-wrap:wrap;gap:18px}
     n.textContent = text; clearTimeout(noteTimer); noteTimer = setTimeout(() => n.remove(), 7000);
   }
   document.addEventListener('click', e => {
-    const a = e.target.closest('a[href$="Atoms-Connections.zip"]'); if (!a) return;
+    const a = e.target.closest('a[href$="Atoms-Connections-Setup.exe"], a[href$="Atoms-Connections.zip"]'); if (!a) return;
+    const file = a.getAttribute('href').split('/').pop(), setup = file.endsWith('.exe');
     const c = store.get('atoms-dl'), n = c && c.day === today() ? c.n : 0;
-    if (n >= DL_MAX) { e.preventDefault(); Sfx.play('deny'); note("You've already downloaded Atom's Connections " + DL_MAX + " times today. It's in your Downloads folder as Atoms-Connections.zip. You can download it again tomorrow."); return; }
+    if (n >= DL_MAX) { e.preventDefault(); Sfx.play('deny'); note("You've already downloaded Atom's Connections " + DL_MAX + " times today. It's in your Downloads folder as " + file + ". You can download it again tomorrow."); return; }
     store.set('atoms-dl', { day: today(), n: n + 1 });
     count('hit', 'downloads');
-    note(n === 0 ? 'Downloading Atoms-Connections.zip. Open it from your Downloads folder, then follow README.txt inside.' : 'Downloading again. Your earlier copy is in your Downloads folder too.');
+    note(n > 0 ? 'Downloading again. Your earlier copy is in your Downloads folder too.' : setup ? 'Downloading ' + file + '. When it finishes, open it to install. If your browser asks, choose Keep.' : 'Downloading ' + file + '. Unzip it, then double-click AtomsConnections.');
   });
 
   // Download count (an Abacus public counter): each download the site allows adds one.
