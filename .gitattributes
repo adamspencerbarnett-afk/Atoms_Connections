@@ -1,0 +1,2 @@
+# Publish files exactly as built (no line-ending conversion), so the live site matches byte for byte.
+* -text
