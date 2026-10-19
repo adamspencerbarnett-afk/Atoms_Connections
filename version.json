@@ -1,6 +1,6 @@
 {
-    "version":  "1.7.2",
+    "version":  "1.7.3",
     "download":  "https://atomsconnections.com/Atoms-Connections-Setup.exe",
     "released":  "2026-10-19",
-    "notes":  "Plugins can now save up to 1 GB and can float over the page. Connections reach a relay over TCP on networks that block UDP. Call cards in chats have a new look."
+    "notes":  "Chat messages stay in the order they happened even when a friend\u0027s PC clock is off, and shared files no longer leave an empty space in the bubble."
 }
