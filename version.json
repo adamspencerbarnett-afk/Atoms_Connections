@@ -1,6 +1,6 @@
 {
-    "version":  "1.7.1",
+    "version":  "1.7.2",
     "download":  "https://atomsconnections.com/Atoms-Connections-Setup.exe",
-    "released":  "2026-10-18",
-    "notes":  "Calls: pick which microphone, camera and speakers to use in Settings -\u003e Calls, or with the gear on a call, even mid-call. Stops Windows switching you to a camera\u0027s microphone, which can make the other person hear an echo. Calling someone back right after a hang-up now works."
+    "released":  "2026-10-19",
+    "notes":  "Plugins can now save up to 1 GB and can float over the page. Connections reach a relay over TCP on networks that block UDP. Call cards in chats have a new look."
 }
