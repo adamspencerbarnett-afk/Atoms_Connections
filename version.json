@@ -1,6 +1,6 @@
 {
-    "version":  "1.8.1",
+    "version":  "1.8.3",
     "download":  "https://atomsconnections.com/Atoms-Connections-Setup.exe",
     "released":  "2026-10-19",
-    "notes":  "Music player polish: long song names fit the compass, a glowing aura moves with the music, and the side button steps back while the compass is showing"
+    "notes":  "Music widget: press and hold to move it, the centre plays or stops, the + sits at the top right. The installer now opens in front of your other windows"
 }
