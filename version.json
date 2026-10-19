@@ -1,6 +1,6 @@
 {
-    "version":  "1.5.7",
+    "version":  "1.6.0",
     "download":  "https://atomsconnections.com/Atoms-Connections-Setup.exe",
     "released":  "2026-10-18",
-    "notes":  "Zoom and position your profile background before saving; the background is now set from Settings, Profile."
+    "notes":  "Plugins can now ask for extras: notices, running in the background, a widget beside your feed, and notes to people you pick. Each is a switch on the plugin\u0027s card, off until you turn it on. Settings has desktop notifications and quiet hours."
 }
