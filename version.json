@@ -1,6 +1,6 @@
 {
-    "version":  "1.7.0",
+    "version":  "1.7.1",
     "download":  "https://atomsconnections.com/Atoms-Connections-Setup.exe",
     "released":  "2026-10-18",
-    "notes":  "Voice and video calls. In any chat, the phone or camera button rings that person, or everyone online in a group, and anyone in the group can join while the call is on. Calls go straight between your computers, end-to-end encrypted. Settings -\u003e Calls has the ring switch and a relay option."
+    "notes":  "Calls: pick which microphone, camera and speakers to use in Settings -\u003e Calls, or with the gear on a call, even mid-call. Stops Windows switching you to a camera\u0027s microphone, which can make the other person hear an echo. Calling someone back right after a hang-up now works."
 }
