@@ -1,6 +1,6 @@
 {
-    "version":  "1.8.0",
+    "version":  "1.8.1",
     "download":  "https://atomsconnections.com/Atoms-Connections-Setup.exe",
     "released":  "2026-10-19",
-    "notes":  "Music: add your songs, play them anywhere in the app, and share albums with your people"
+    "notes":  "Music player polish: long song names fit the compass, a glowing aura moves with the music, and the side button steps back while the compass is showing"
 }
