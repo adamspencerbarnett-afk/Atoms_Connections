@@ -1,31 +1,7 @@
 {
  "format": 1,
- "generated": "2026-10-19T19:06:55.559Z",
+ "generated": "2026-10-19T22:01:13.702Z",
  "categories": [
-  {
-   "name": "Entertainment",
-   "plugins": [
-    {
-     "id": "compass-player",
-     "name": "Compass Player",
-     "version": "1.1.0",
-     "author": "Ultra Encode, LLC",
-     "description": "A small compass-shaped music player that floats over the app. Add songs or a folder with the + button; songs are kept compressed as Opus in encrypted storage and decoded only while they play.",
-     "kind": "tool",
-     "players": {
-      "min": 1,
-      "max": 1
-     },
-     "size": 235698,
-     "sha256": "5655b2cfc5017261e83e19f2547b233196401ad977204b6619b667b377482642",
-     "file": "plugins/Entertainment/Compass-Player-v1.1.atomplugin",
-     "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImYiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNiOWMyZDAiLz48L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJyIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNUZEOEU4Ii8+PHN0b3Agb2Zmc2V0PSIuNSIgc3RvcC1jb2xvcj0iIzFFNkZFOCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzhCNERGRiIvPjwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxwYXRoIGQ9Ik0zMiAyIEwzOSAxOCBRNDYgMTggNDYgMjUgTDYyIDMyIEw0NiAzOSBRNDYgNDYgMzkgNDYgTDMyIDYyIEwyNSA0NiBRMTggNDYgMTggMzkgTDIgMzIgTDE4IDI1IFExOCAxOCAyNSAxOCBaIiBmaWxsPSJ1cmwoI2YpIi8+CiAgPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMTMiIGZpbGw9IiMxNTE4MUUiLz4KICA8Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIxMyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI3IpIiBzdHJva2Utd2lkdGg9IjIuNSIvPgogIDxwYXRoIGQ9Ik0yOSAyNiB2MTIgbDkgLTYgeiIgZmlsbD0iIzVGRDhFOCIvPgo8L3N2Zz4K",
-     "permissions": [
-      "widget"
-     ]
-    }
-   ]
-  },
   {
    "name": "Games",
    "plugins": []

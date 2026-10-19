@@ -42,7 +42,8 @@ Please read these few terms; they are short and plain on purpose.
    The software stores your posts, photos, messages, and keys only on your
    own device, encrypted, and sends them only to the people you have
    connected with. Ultra Encode, LLC does not collect, receive, or have
-   access to any of it.
+   access to any of it. Music you add is kept the same way; share only
+   music you own, and only with your family and friends.
 
 7. NO WARRANTY
    Atom's Connections is provided "as is", without warranty of any kind,

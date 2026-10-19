@@ -1,6 +1,6 @@
 {
-    "version":  "1.7.3",
+    "version":  "1.8.0",
     "download":  "https://atomsconnections.com/Atoms-Connections-Setup.exe",
     "released":  "2026-10-19",
-    "notes":  "Chat messages stay in the order they happened even when a friend\u0027s PC clock is off, and shared files no longer leave an empty space in the bubble."
+    "notes":  "Music: add your songs, play them anywhere in the app, and share albums with your people"
 }
