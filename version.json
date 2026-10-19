@@ -1,6 +1,6 @@
 {
-    "version":  "1.5.6",
+    "version":  "1.5.7",
     "download":  "https://atomsconnections.com/Atoms-Connections-Setup.exe",
     "released":  "2026-10-18",
-    "notes":  "Settings has a connection test that says in plain words whether friends can reach you, and friends show \u0027via relay\u0027 when the fast path isn\u0027t available. Fixes a stray \u0027null\u0027 on the Settings page."
+    "notes":  "Zoom and position your profile background before saving; the background is now set from Settings, Profile."
 }
