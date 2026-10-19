@@ -1,6 +1,6 @@
 {
-    "version":  "1.8.3",
+    "version":  "1.8.4",
     "download":  "https://atomsconnections.com/Atoms-Connections-Setup.exe",
     "released":  "2026-10-19",
-    "notes":  "Music widget: press and hold to move it, the centre plays or stops, the + sits at the top right. The installer now opens in front of your other windows"
+    "notes":  "Music widget: the centre pauses and carries on where you left off, and Music settings can hide the compass player"
 }
