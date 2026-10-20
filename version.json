@@ -1,6 +1,6 @@
 {
-    "version":  "1.10.1",
+    "version":  "1.10.2",
     "download":  "https://atomsconnections.com/Atoms-Connections-Setup.exe",
     "released":  "2026-10-20",
-    "notes":  "The music player has a new look: a steel ring with chrome buttons and lights that pulse with the music, a live sound display and glowing waves in the dial, and the song name, a progress bar and times shown on the player itself. Drag the bar to jump to any point in the song."
+    "notes":  "A cleaner look: the large page name at the top of each page is gone, since the menu on the left already shows where you are. Family/Friends no longer jumps sideways when you open it; every page now sits in the same place."
 }
