@@ -1,6 +1,6 @@
 {
-    "version":  "1.10.2",
+    "version":  "1.10.3",
     "download":  "https://atomsconnections.com/Atoms-Connections-Setup.exe",
     "released":  "2026-10-20",
-    "notes":  "A cleaner look: the large page name at the top of each page is gone, since the menu on the left already shows where you are. Family/Friends no longer jumps sideways when you open it; every page now sits in the same place."
+    "notes":  "Calls got better for gaming and sharing: your music keeps playing through a call, and a new option stops Windows turning game and music sounds down while you talk (Settings, Calls). When someone shares a screen, the new people button hides the faces so the screen fills the window or the whole screen. Also fixed: muting a video in the feed no longer affects call sound."
 }
