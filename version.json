@@ -1,6 +1,6 @@
 {
-    "version":  "1.9.0",
+    "version":  "1.10.0",
     "download":  "https://atomsconnections.com/Atoms-Connections-Setup.exe",
     "released":  "2026-10-19",
-    "notes":  "Share your screen in a call: the whole screen, one window or one browser tab, shown big on the call window for everyone in it, with a Sharing chip until you stop. Only the people in the call can see it and nothing is recorded. Plugins can never use the screen, camera or microphone. Calls connect more reliably when someone joins late."
+    "notes":  "Files now travel in pieces: a transfer that is interrupted carries on where it stopped, big files come from everyone who has them at once, and chats never wait behind a file. New File Box at the bottom of the chat list: a shared box of files for the people you pick, with roles and a size cap; it shows everything in it and downloads only what you ask for, unless you switch on keep-downloaded. Two friends whose routers refuse a direct connection can now reach each other through a friend they share, who sees only encrypted bytes. The public relay can be switched off."
 }
