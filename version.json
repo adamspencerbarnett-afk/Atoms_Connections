@@ -1,6 +1,6 @@
 {
-    "version":  "1.8.5",
+    "version":  "1.9.0",
     "download":  "https://atomsconnections.com/Atoms-Connections-Setup.exe",
     "released":  "2026-10-19",
-    "notes":  "Video calls: your camera now shows on the other side from the start. The call window can be dragged anywhere, resized, shrunk to a bar or shown full screen, so you can talk while playing a game or reading the feed. New picture quality choice (High, Medium, Low) on the call and in Settings, Calls; Low keeps up on slow connections."
+    "notes":  "Share your screen in a call: the whole screen, one window or one browser tab, shown big on the call window for everyone in it, with a Sharing chip until you stop. Only the people in the call can see it and nothing is recorded. Plugins can never use the screen, camera or microphone. Calls connect more reliably when someone joins late."
 }
