@@ -1,6 +1,6 @@
 {
-    "version":  "1.8.4",
+    "version":  "1.8.5",
     "download":  "https://atomsconnections.com/Atoms-Connections-Setup.exe",
     "released":  "2026-10-19",
-    "notes":  "Music widget: the centre pauses and carries on where you left off, and Music settings can hide the compass player"
+    "notes":  "Video calls: your camera now shows on the other side from the start. The call window can be dragged anywhere, resized, shrunk to a bar or shown full screen, so you can talk while playing a game or reading the feed. New picture quality choice (High, Medium, Low) on the call and in Settings, Calls; Low keeps up on slow connections."
 }
