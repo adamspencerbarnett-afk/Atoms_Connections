@@ -1,6 +1,6 @@
 {
-    "version":  "1.10.3",
+    "version":  "1.10.4",
     "download":  "https://atomsconnections.com/Atoms-Connections-Setup.exe",
     "released":  "2026-10-20",
-    "notes":  "Calls got better for gaming and sharing: your music keeps playing through a call, and a new option stops Windows turning game and music sounds down while you talk (Settings, Calls). When someone shares a screen, the new people button hides the faces so the screen fills the window or the whole screen. Also fixed: muting a video in the feed no longer affects call sound."
+    "notes":  "File Box: Remove from this PC and Delete now sit behind a small ... menu on each file, so they can\u0027t be clicked by accident."
 }
