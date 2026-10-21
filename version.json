@@ -1,6 +1,6 @@
 {
-    "version":  "1.10.4",
+    "version":  "1.11.0",
     "download":  "https://atomsconnections.com/Atoms-Connections-Setup.exe",
     "released":  "2026-10-20",
-    "notes":  "File Box: Remove from this PC and Delete now sit behind a small ... menu on each file, so they can\u0027t be clicked by accident."
+    "notes":  "Two screens? Games now open in their own window on your other screen, so you can keep chatting and seeing each other in a call while you play (Settings, Games). Answering a call now tells you when the microphone or camera is stuck, instead of waiting on Starting."
 }
